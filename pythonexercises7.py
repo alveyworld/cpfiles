@@ -75,9 +75,50 @@ def main_arithmetic():
 	print "testing ratio(7.8, 3.2): ", ratio(7.8, 3.2)
 	print "testing pythagoras(3, 4): ", pythagoras(3, 4)
 	print "testing pythagoras(35, 67): ", pythagoras(35, 67)
+	
+def reverse(zack):
+	return not zack
 
+def band(a, b):
+	if a==True and b==True:
+		return True
+	else:
+		return False
+
+def band2(a, b):
+	return a and b
+	
+def bor(a, b):
+	if a==True or b==True:
+		return True
+	else:
+		return False
+	
+def bor2(a, b):
+	return a or b
+	
+
+def main_boolean():
+	print "test reverse(True): ", reverse(True)
+	print "test reverse(False): ", reverse(False)
+	print "test reverse(1): ", reverse(1)
+	print "test reverse(0): ", reverse(0)
+	print "test band(True, True): ", band(True, True)
+	print "test band2(True, True): ", band(True, True)
+	print "test band(True, False): ", band(True, False)
+	print "test band2(True, False): ", band(True, False)
+	print "test band(False, False): ", band(False, False)
+	print "test band2(False, False): ", band(False, False)
+	print "test bor(True, True): ", bor(True, True)
+	print "test bor(True, True): ", bor(True, True)
+	print "test bor(True, False): ", bor(True, False)
+	print "test bor(True, False): ", bor(True, False)
+	print "test bor(False, False): ", bor(False, False)
+	print "test bor(False, False): ", bor(False, False)
+	
 def main():
 	main_function()
 	main_arithmetic()
+	main_boolean()
 	
 main()
