@@ -74,11 +74,19 @@ def main_arithmetic():
 	print "testing ratio(7.7, 2.8): ", ratio(7.7, 2.8)
 	print "testing ratio(2.8, 7.7): ", ratio(2.8, 7.7)
 	print "testing pythagoras(3, 4): ", pythagoras(3, 4)
-	print "testing pythagoras(28, 32): ", pythagoras(28, 32)
+	print "testing pythagoras(28, 32): ", pythagoras(28, 32) 
 
 
+def reverse(jimmy):
+	return not jimmy
+
+def main_boolean():
+	print "testing reverse(True): ", reverse(True)
+	print "testing reverse(False): ", reverse(False)
+	
 def main():
 	main_function()
 	main_arithmetic()
+	main_boolean()
 	
 main()
