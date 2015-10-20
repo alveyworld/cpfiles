@@ -48,6 +48,15 @@ def power2(x, e):
 def calculate(a, b, c, d, e):
 	return (a + b / d - e) * c
 
+def ratio(f1, f2):
+	if f1 > f2:
+		return f1 / f2
+	else:
+		return f2 / f1
+
+def pythagoras(a, b):
+	return (a**2 + b**2)**(.5)
+
 def main_arithmetic():
 	print "test reverse(3): ", reverse(3)
 	print "test reverse(-3): ", reverse(-3)
@@ -62,6 +71,10 @@ def main_arithmetic():
 	print "test remainder(133, 19): ", remainder(133, 19)
 	print "test power(2, 3): ", power(2, 3)
 	print "test calculate(1, 2, 3, 4, 5): ", calculate(1, 2, 3, 4, 5)
+	print "testing ratio(7.7, 2.8): ", ratio(7.7, 2.8)
+	print "testing ratio(2.8, 7.7): ", ratio(2.8, 7.7)
+	print "testing pythagoras(3, 4): ", pythagoras(3, 4)
+	print "testing pythagoras(28, 32): ", pythagoras(28, 32)
 
 
 def main():
