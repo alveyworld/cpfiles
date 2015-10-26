@@ -120,9 +120,19 @@ def positive(n):
 	else:
 		return False
 		
+def bigger(x, y):
+	if x > y:
+		return True
+	else:
+		return False
+		
+
+
 def main_boolean_numbers():
 	print "testing positive(-29): ", positive(-29)
 	print "testing positive(29): ", positive(29)
+	print "test bigger(3, 2): ", bigger(3, 2)
+	print "test bigger(7, 14): ", bigger(7, 14)
 
 def main():
 	main_function()
