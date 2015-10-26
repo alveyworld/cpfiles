@@ -129,6 +129,10 @@ def not_same(w, h):
 def less_than(alvey, you):
 	return alvey < you
 	
+def at_least_13(d):
+	return d >= 13
+	
+
 
 def main_boolean_numbers():
 	print "testing positive(-29): ", positive(-29)
@@ -141,6 +145,9 @@ def main_boolean_numbers():
 	print "test not_same(77, 77): ", not_same(77, 77)
 	print "testing less_than(37, 12): ", less_than(37, 12)
 	print "testing less_than(10, 100): ", less_than(10, 100)
+	print "test at_least_13(13): ", at_least_13(13)
+	print "test at_least_13(11): ", at_least_13(11)
+	print "test at_least_13(56): ", at_least_13(56)
 	
 	
 	
