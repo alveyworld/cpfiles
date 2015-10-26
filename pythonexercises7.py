@@ -169,12 +169,22 @@ def main_boolean_numbers():
 	print "test at_most_13(13): ", at_most_13(13)
 	print "test at_most_13(11): ", at_most_13(11)
 	
-	
+
+def biggest(ab, yb):
+	if ab > yb:
+		return ab
+	else:
+		return yb
+		
+def main_conditionals():
+	print "testing biggest(500, 10): ", biggest(500, 10)
+	print "testing biggest(500, 1000): ", biggest(500, 1000)
 	
 def main():
 	main_function()
 	main_arithmetic()
 	main_boolean()
 	main_boolean_numbers()
+	main_conditionals()
 	
 main()
