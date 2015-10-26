@@ -125,7 +125,9 @@ def no_diff(d, b):
 	
 def not_same(w, h):
 	return w != h
-	
+
+def less_than(alvey, you):
+	return alvey < you
 	
 
 def main_boolean_numbers():
@@ -137,6 +139,9 @@ def main_boolean_numbers():
 	print "testing no_diff(77, 77): ", no_diff(77, 77)
 	print "test not_same(45, 82): ", not_same(45, 82)
 	print "test not_same(77, 77): ", not_same(77, 77)
+	print "testing less_than(37, 12): ", less_than(37, 12)
+	print "testing less_than(10, 100): ", less_than(10, 100)
+	
 	
 	
 def main():
