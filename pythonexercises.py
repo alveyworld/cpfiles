@@ -115,25 +115,23 @@ def main_boolean():
 	print "test xor(False, True): ", xor(False, True)
 	
 def positive(n):
-	if n > 0:
-		return True
-	else:
-		return False
+	return n > 0
 		
 def bigger(x, y):
-	if x > y:
-		return True
-	else:
-		return False
-		
+	return x > y
 
+def no_diff(d, b):
+	return d == b
+	
 
 def main_boolean_numbers():
 	print "testing positive(-29): ", positive(-29)
 	print "testing positive(29): ", positive(29)
 	print "test bigger(3, 2): ", bigger(3, 2)
 	print "test bigger(7, 14): ", bigger(7, 14)
-
+	print "testing no_diff(45, 82): ", no_diff(45, 82)
+	print "testing no_diff(77, 77): ", no_diff(77, 77)
+	
 def main():
 	main_function()
 	main_arithmetic()
