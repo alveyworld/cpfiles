@@ -178,6 +178,12 @@ def letter_grade(score):
 	else:
 		return "F"
 
+def food_tax(subtotal, grocery):
+	if grocery: # 3 percent
+		return subtotal * .03
+	else:
+		return subtotal * .0725
+
 def main_conditionals():
 	print "test out biggest(21, 3): ", biggest(21, 3)
 	print "test out biggest(5, 19): ", biggest(5, 19)
