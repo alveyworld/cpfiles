@@ -194,6 +194,12 @@ def letter_grade(score):
 	else:
 		return "F"
 		
+def food_tax(subtotal, grocery):
+	if grocery:
+		return subtotal * .03
+	else:
+		return subtotal * .0725
+		
 def main_conditionals():
 	print "testing biggest(500, 10): ", biggest(500, 10)
 	print "testing biggest(500, 1000): ", biggest(500, 1000)
@@ -204,6 +210,8 @@ def main_conditionals():
 	print "test letter_grade(70): ", letter_grade(70)
 	print "test letter_grade(85): ", letter_grade(85)
 	print "test letter_grade(95): ", letter_grade(95)
+	print "testing food_tax(12.45, True): ", food_tax(12.45, True)
+	print "testing food_tax(12.45, False): ", food_tax(12.45, False)
 	
 	
 def main():
