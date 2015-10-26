@@ -91,6 +91,8 @@ def xsame(bool1, bool2):
 
 def xor(bool1, bool2):
 	return bool1 != bool2
+	
+
 
 def main_boolean():
 	print "testing reverse(True): ", reverse(True)
@@ -112,9 +114,20 @@ def main_boolean():
 	print "test xor(True, False): ", xor(True, False)
 	print "test xor(False, True): ", xor(False, True)
 	
+def positive(n):
+	if n > 0:
+		return True
+	else:
+		return False
+		
+def main_boolean_numbers():
+	print "testing positive(-29): ", positive(-29)
+	print "testing positive(29): ", positive(29)
+
 def main():
 	main_function()
 	main_arithmetic()
 	main_boolean()
+	main_boolean_numbers()
 	
 main()
