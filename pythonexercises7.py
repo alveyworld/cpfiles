@@ -140,6 +140,12 @@ def bigger(r, p):
 	if r > p:
 		return True
 	else:
+		return False
+		
+def no_diff(w, h):
+	if w == h:
+		return True
+	else:
 		return False		
 
 def main_boolean_numbers():
@@ -147,6 +153,9 @@ def main_boolean_numbers():
 	print "testing positive(-29): ", positive(-29)
 	print "test bigger(200, 10): ", bigger(200, 10)
 	print "test bigger(10, 200): ", bigger(10, 200)
+	print "testing no_diff(99, 99): ", no_diff(99,99)
+	print "testing no_diff(67, 76): ", no_diff(67,76)
+	
 	
 	
 def main():
