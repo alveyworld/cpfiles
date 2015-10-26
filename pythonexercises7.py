@@ -131,22 +131,13 @@ def main_boolean():
 	print "test xor(False, False): ", xor(False, False)
 
 def positive(n):
-	if n > 0:
-		return True
-	else:
-		return False
-
+	return n > 0
+	
 def bigger(r, p):
-	if r > p:
-		return True
-	else:
-		return False
+	return r > p
 		
 def no_diff(w, h):
-	if w == h:
-		return True
-	else:
-		return False		
+	return w == h		
 
 def main_boolean_numbers():
 	print "testing positive(29): ", positive(29)
