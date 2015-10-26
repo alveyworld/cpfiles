@@ -129,11 +129,30 @@ def main_boolean():
 	print "test xor(True, False): ", xor(True, False)
 	print "test xor(False, True): ", xor(False, True)
 	print "test xor(False, False): ", xor(False, False)
+
+def positive(n):
+	if n > 0:
+		return True
+	else:
+		return False
+
+def bigger(r, p):
+	if r > p:
+		return True
+	else:
+		return False		
+
+def main_boolean_numbers():
+	print "testing positive(29): ", positive(29)
+	print "testing positive(-29): ", positive(-29)
+	print "test bigger(200, 10): ", bigger(200, 10)
+	print "test bigger(10, 200): ", bigger(10, 200)
 	
 	
 def main():
 	main_function()
 	main_arithmetic()
 	main_boolean()
+	main_boolean_numbers()
 	
 main()
