@@ -97,6 +97,8 @@ def bor(a, b):
 def bor2(a, b):
 	return a or b
 	
+def xsame(b, g):
+	return b == g
 
 def main_boolean():
 	print "test reverse(True): ", reverse(True)
@@ -115,6 +117,11 @@ def main_boolean():
 	print "test bor(True, False): ", bor(True, False)
 	print "test bor(False, False): ", bor(False, False)
 	print "test bor(False, False): ", bor(False, False)
+	print "test xsame(True, True): ", xsame(True, True)
+	print "test xsame(True, False): ", xsame(True, False)
+	print "test xsame(False, True): ", xsame(False, True)
+	print "test xsame(False, False): ", xsame(False, False)
+	
 	
 def main():
 	main_function()
