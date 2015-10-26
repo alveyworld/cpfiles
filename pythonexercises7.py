@@ -139,6 +139,9 @@ def bigger(r, p):
 def no_diff(w, h):
 	return w == h		
 
+def not_same(b, g):
+	return b != g
+
 def main_boolean_numbers():
 	print "testing positive(29): ", positive(29)
 	print "testing positive(-29): ", positive(-29)
@@ -146,6 +149,8 @@ def main_boolean_numbers():
 	print "test bigger(10, 200): ", bigger(10, 200)
 	print "testing no_diff(99, 99): ", no_diff(99,99)
 	print "testing no_diff(67, 76): ", no_diff(67,76)
+	print "testing no_same(99, 99): ", not_same(99,99)
+	print "testing no_same(67, 76): ", not_same(67,76)
 	
 	
 	
