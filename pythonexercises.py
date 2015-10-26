@@ -79,10 +79,38 @@ def main_arithmetic():
 
 def reverse(jimmy):
 	return not jimmy
+	
+def band(bool1, bool2):
+	return bool1 and bool2
+
+def bor(bool1, bool2):
+	return bool1 or bool2
+
+def xsame(bool1, bool2):
+	return bool1 == bool2
+
+def xor(bool1, bool2):
+	return bool1 != bool2
 
 def main_boolean():
 	print "testing reverse(True): ", reverse(True)
 	print "testing reverse(False): ", reverse(False)
+	print "testing band(True, True): ", band(True, True)
+	print "testing band(True, False): ", band(True, False)
+	print "testing band(False, True): ", band(False, True)
+	print "testing band(False, False): ", band(False, False)
+	print "testing bor(True, True): ", bor(True, True)
+	print "testing bor(True, False): ", bor(True, False)
+	print "testing bor(False, True): ", bor(False, True)
+	print "testing bor(False, False): ", bor(False, False)
+	print "test xsame(True, True): ", xsame(True, True)
+	print "test xsame(False, False): ", xsame(False, False)
+	print "test xsame(True, False): ", xsame(True, False)
+	print "test xsame(False, True): ", xsame(False, True)
+	print "test xor(True, True): ", xor(True, True)
+	print "test xor(False, False): ", xor(False, False)
+	print "test xor(True, False): ", xor(True, False)
+	print "test xor(False, True): ", xor(False, True)
 	
 def main():
 	main_function()
