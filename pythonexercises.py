@@ -166,6 +166,18 @@ def smallest(y, z):
 	else:
 		return z
 
+def letter_grade(score):
+	if score >= 90:
+		return "A"
+	elif score >= 80:
+		return "B"
+	elif score >= 70:
+		return "C"
+	elif score >= 60:
+		return "D"
+	else:
+		return "F"
+
 def main_conditionals():
 	print "test out biggest(21, 3): ", biggest(21, 3)
 	print "test out biggest(5, 19): ", biggest(5, 19)
@@ -173,6 +185,11 @@ def main_conditionals():
 	print "test out smallest(21, 3): ", smallest(21, 3)
 	print "test out smallest(5, 19): ", smallest(5, 19)
 	print "test out smallest(35, 35): ", smallest(35, 35)
+	print "testing letter_grade(92): ", letter_grade(92)
+	print "testing letter_grade(85): ", letter_grade(85)
+	print "testing letter_grade(70): ", letter_grade(70)
+	print "testing letter_grade(63): ", letter_grade(63)
+	print "testing letter_grade(28): ", letter_grade(28)
 	
 def main():
 	main_function()
