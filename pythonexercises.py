@@ -132,7 +132,8 @@ def less_than(alvey, you):
 def at_least_13(d):
 	return d >= 13
 	
-
+def at_most_13(d):
+	return d <= 13
 
 def main_boolean_numbers():
 	print "testing positive(-29): ", positive(-29)
@@ -148,6 +149,10 @@ def main_boolean_numbers():
 	print "test at_least_13(13): ", at_least_13(13)
 	print "test at_least_13(11): ", at_least_13(11)
 	print "test at_least_13(56): ", at_least_13(56)
+	print "test at_most_13(13): ", at_most_13(13)
+	print "test at_most_13(11): ", at_most_13(11)
+	print "test at_most_13(56): ", at_most_13(56)
+	
 	
 	
 	
