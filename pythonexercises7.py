@@ -175,10 +175,18 @@ def biggest(ab, yb):
 		return ab
 	else:
 		return yb
+
+def smallest(ab, yb):
+	if ab < yb:
+		return ab
+	else:
+		return yb
 		
 def main_conditionals():
 	print "testing biggest(500, 10): ", biggest(500, 10)
 	print "testing biggest(500, 1000): ", biggest(500, 1000)
+	print "testing smallest(500, 10): ", smallest(500, 10)
+	print "testing smallest(500, 1000): ", smallest(500, 1000)
 	
 def main():
 	main_function()
