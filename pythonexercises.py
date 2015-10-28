@@ -225,6 +225,12 @@ def main_conditionals():
 	print "testing big3(1, 1, 2): ", big3(1, 1, 2)
 	print "testing big3(2, 2, 1): ", big3(2, 2, 1)
 	print "testing big3(2, 1, 1): ", big3(2, 1, 1)
+	print "testing small_sum(3, 2, 1): ", small_sum(3, 2, 1)
+	print "testing small_sum(2, 3, 1): ", small_sum(2, 3, 1)
+	print "testing small_sum(1, 2, 3): ", small_sum(1, 2, 3)
+	print "testing small_sum(1, 1, 2): ", small_sum(1, 1, 2)
+	print "testing small_sum(2, 2, 1): ", small_sum(2, 2, 1)
+	print "testing small_sum(2, 1, 1): ", small_sum(2, 1, 1)
 	
 	
 def main():
