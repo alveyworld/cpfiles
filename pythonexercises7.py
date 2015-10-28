@@ -230,26 +230,10 @@ def meat_loaf(onions, ketchup, garlic):
 		return False
 
 def big3reorder(a, b, c):
-	big = big3(a, b, c)
-	if a == big:
-		small = smallest(b, c)
-		if b == small:
-			middle = c
-		else:
-			middle = b
-	elif b == big:
-		small = smallest(a, c)
-		if a == small:
-			middle = c
-		else:
-			middle = a
-	elif c == big:
-		small = smallest(a, b)
-		if a == small:
-			middle = b
-		else:
-			middle = a
-	return big, middle, small
+	z = [a, b, c]
+	z.sort()
+	z.reverse()
+	return z[0], z[1], z[2]
 	
 
 def main_conditionals():
