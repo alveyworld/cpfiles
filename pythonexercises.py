@@ -213,6 +213,14 @@ def meat_loaf(ketchup, eggs, meat):
 	else:
 		return False
 
+def big3reorder(x, e, z):
+	if x > e and x > z and e >= z:
+		return x, e, z
+	elif x > e and x > z and z >= e:
+		return x, z, e
+	elif 
+	
+
 def main_conditionals():
 	print "test out biggest(21, 3): ", biggest(21, 3)
 	print "test out biggest(5, 19): ", biggest(5, 19)
