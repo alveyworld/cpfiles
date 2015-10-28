@@ -183,6 +183,25 @@ def food_tax(subtotal, grocery):
 		return subtotal * .03
 	else:
 		return subtotal * .0725
+		
+def same(l, m, c):
+	return l == m and m == c
+
+def big3(lebron, irvin, love):
+	if lebron >= irvin and lebron >= love:
+		return lebron
+	elif irvin >= lebron and irvin >= love:
+		return irvin
+	else:
+		return love
+
+def small_sum(a, b, c):
+	if a < c and b < c:
+		return a + b
+	elif b < a and c < a:
+		return b + c
+	else:
+		return a + c
 
 def main_conditionals():
 	print "test out biggest(21, 3): ", biggest(21, 3)
@@ -196,6 +215,17 @@ def main_conditionals():
 	print "testing letter_grade(70): ", letter_grade(70)
 	print "testing letter_grade(63): ", letter_grade(63)
 	print "testing letter_grade(28): ", letter_grade(28)
+	print "test food_tax(12.43, True): ", food_tax(12.43, True)
+	print "test food_tax(12.43, False): ", food_tax(12.43, False)
+	print "testing same(7, 7, 7): ", same(7, 7, 7)
+	print "testing same(7, 2, 8): ", same(7, 2, 8)
+	print "testing big3(3, 2, 1): ", big3(3, 2, 1)
+	print "testing big3(2, 3, 1): ", big3(2, 3, 1)
+	print "testing big3(1, 2, 3): ", big3(1, 2, 3)
+	print "testing big3(1, 1, 2): ", big3(1, 1, 2)
+	print "testing big3(2, 2, 1): ", big3(2, 2, 1)
+	print "testing big3(2, 1, 1): ", big3(2, 1, 1)
+	
 	
 def main():
 	main_function()
