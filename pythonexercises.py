@@ -203,6 +203,16 @@ def small_sum(a, b, c):
 	else:
 		return a + c
 
+def meat_loaf(ketchup, eggs, meat):
+	if ketchup and eggs and not meat:
+		return True
+	elif ketchup and meat and not eggs:
+		return True
+	elif eggs and meat and not ketchup:
+		return True
+	else:
+		return False
+
 def main_conditionals():
 	print "test out biggest(21, 3): ", biggest(21, 3)
 	print "test out biggest(5, 19): ", biggest(5, 19)
@@ -231,6 +241,10 @@ def main_conditionals():
 	print "testing small_sum(1, 1, 2): ", small_sum(1, 1, 2)
 	print "testing small_sum(2, 2, 1): ", small_sum(2, 2, 1)
 	print "testing small_sum(2, 1, 1): ", small_sum(2, 1, 1)
+	print "testing meat_loaf(True, True, True): ", meat_loaf(True, True, True)
+	print "testing meat_loaf(True, True, False): ", meat_loaf(True, True, False)
+	print "testing meat_loaf(True, False, False): ", meat_loaf(True, False, False)
+	print "testing meat_loaf(False, False, False): ", meat_loaf(False, False, False)
 	
 	
 def main():
