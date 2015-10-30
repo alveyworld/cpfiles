@@ -301,8 +301,33 @@ def total_odds(a, b):
 		if num % 2 == 1:
 			t += num
 	return t
+	
+def total_evens(a, b):
+	t = 0
+	for num in range(a, b):
+		if num % 2 == 0:
+			t += num
+	return t
 
+def total_7s(a, b):
+	t = 0
+	for num in range(a, b):
+		if num % 7 == 0:
+			t += num
+	return t
+	
+def total_non7s(a, b):
+	t = 0
+	for num in range(a, b):
+		if num % 7 != 0:
+			t += num
+	return t
 
+def squares(x):
+	ts = 0
+	for num in range(x):
+		ts += num**2
+	return ts
 
 def main_counted_loops():
 	print "testing total(5): ", total(5)
@@ -310,6 +335,11 @@ def main_counted_loops():
 	print "testing total_slice(3, 8): ", total_slice(3, 8)
 	print "testing total_slice2(8, 3): ", total_slice2(8, 3)
 	print "testing total_slice2(3, 8): ", total_slice2(3, 8)
+	print "testing total_odds(2, 10): ", total_odds(2, 10) # 3+5+7+9
+	print "testing total_evens(2, 10): ", total_evens(2, 10) # 2+4+6+8
+	print "testing total_7s(2, 30): ", total_7s(2, 30) # 7+14+21+28
+	print "testing total_non7s(2, 10): ", total_non7s(2, 10) # 2+3+4+5+6+8+9
+	print "testing squares(5): ", squares(5) # 1+4+9+16
 		
 def main():
 	main_function()
