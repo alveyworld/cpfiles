@@ -221,6 +221,12 @@ def big3reorder(a, b, c):
 	else:
 		return c, biggest(a, b), smallest(a, b)
 	
+def positive_multiple(z, y):
+	product = z * y
+	if positive(product):
+		return product
+	else:
+		return -product
 
 def main_conditionals():
 	print "test out biggest(21, 3): ", biggest(21, 3)
@@ -254,13 +260,26 @@ def main_conditionals():
 	print "testing meat_loaf(True, True, False): ", meat_loaf(True, True, False)
 	print "testing meat_loaf(True, False, False): ", meat_loaf(True, False, False)
 	print "testing meat_loaf(False, False, False): ", meat_loaf(False, False, False)
+	print "test positive_multiple(5, 7): ", positive_multiple(5, 7)
+	print "test positive_multiple(-5, -7): ", positive_multiple(-5, -7)
+	print "test positive_multiple(-5, 7): ", positive_multiple(-5, 7)
 	
-	
+def total(x):
+	t = 0
+	for num in range(x):
+		t += num
+	return t
+
+def main_counted_loops():
+	print "testing total(3): ", total(4)
+	print "testing total(21): ", total(21)
+
 def main():
 	main_function()
 	main_arithmetic()
 	main_boolean()
 	main_boolean_numbers()
 	main_conditionals()
+	main_counted_loops()
 	
 main()
