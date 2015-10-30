@@ -298,7 +298,12 @@ def total_evens(s, k):
 		t += num
 	return t
 
-
+def total_7s(a, b):
+	t = 0
+	for num in range(a, b):
+		if num % 7 == 0:
+			t += num
+	return t
 
 def main_counted_loops():
 	print "testing total(3): ", total(4)
@@ -310,6 +315,7 @@ def main_counted_loops():
 	print "testing total_odds(1, 6): ", total_odds(1, 6) # 1+3+5
 	print "testing total_evens(2, 10): ", total_evens(2, 10) # 2+4+6+8
 	print "testing total_evens(1, 6): ", total_evens(1, 6) # 2+4
+	print "testing total_7s(1, 22): ", total_7s(1, 22) # 7+14+21
 	
 	
 def main():
