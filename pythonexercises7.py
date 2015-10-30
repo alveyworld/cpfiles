@@ -237,7 +237,14 @@ def big3reorder(a, b, c):
 	else:
 		return c, biggest(a, b), smallest(a, b)
 	
-
+def positive_multiple(w, h):
+	product = w * h
+	if not positive(product):
+		return product * -1
+	else:
+		return product
+	
+	
 def main_conditionals():
 	print "testing biggest(500, 10): ", biggest(500, 10)
 	print "testing biggest(500, 1000): ", biggest(500, 1000)
@@ -264,15 +271,52 @@ def main_conditionals():
 	print "testing meat_loaf(True, False, False): ", meat_loaf(True, False, False)
 	print "testing meat_loaf(True, True, True): ", meat_loaf(True, True, True)
 	print "test big3reorder(5, 8, 2): ", big3reorder(5, 8, 2)
+	print "test positive_multiple(5, 7): ", positive_multiple(5, 7)
+	print "test positive_multiple(-5, -7): ", positive_multiple(-5, -7)
+	print "test positive_multiple(-5, 7): ", positive_multiple(-5, 7)
 	
-	
-	
-	
+
+def total(x):
+	# total(5) 0+1+2+3+4
+	t = 0
+	for num in range(x):
+		t += num
+	return t
+
+def total_slice(a, b):
+	t = 0
+	for num in range(a, b):
+		t += num
+	return t
+
+def total_slice2(a, b):
+	t = 0
+	for num in range(smallest(a, b), biggest(a, b)):
+		t += num
+	return t
+
+def total_odds(a, b):
+	t = 0
+	for num in range(a, b):
+		if num % 2 == 1:
+			t += num
+	return t
+
+
+
+def main_counted_loops():
+	print "testing total(5): ", total(5)
+	print "testing total(63): ", total(63)
+	print "testing total_slice(3, 8): ", total_slice(3, 8)
+	print "testing total_slice2(8, 3): ", total_slice2(8, 3)
+	print "testing total_slice2(3, 8): ", total_slice2(3, 8)
+		
 def main():
 	main_function()
 	main_arithmetic()
 	main_boolean()
 	main_boolean_numbers()
 	main_conditionals()
+	main_counted_loops()
 	
 main()
