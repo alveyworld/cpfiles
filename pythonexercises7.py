@@ -340,6 +340,33 @@ def main_counted_loops():
 	print "testing total_7s(2, 30): ", total_7s(2, 30) # 7+14+21+28
 	print "testing total_non7s(2, 10): ", total_non7s(2, 10) # 2+3+4+5+6+8+9
 	print "testing squares(5): ", squares(5) # 1+4+9+16
+
+def hello():
+	return "hello"
+	
+def nothing():
+	return ""
+
+def second_letter(two):
+	return two[1]
+	
+def one_letter(str, num):
+	return str[num]
+	
+def concatenate(silvester, puss_in_boots):
+	return silvester + puss_in_boots
+
+
+
+def main_strings():
+	print "testing hello(): ", hello()
+	print "testing nothing(): ", nothing()
+	print "testing second_letter('cheese'): ", second_letter('cheese')
+	print "testing one_letter('random', 5): ", one_letter('random', 5)
+	print "testing concatenate('tweety', 'shrek'): ", concatenate('tweety',' shrek')
+	
+
+	
 		
 def main():
 	main_function()
@@ -348,5 +375,6 @@ def main():
 	main_boolean_numbers()
 	main_conditionals()
 	main_counted_loops()
+	main_strings()
 	
 main()
