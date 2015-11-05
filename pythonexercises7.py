@@ -356,7 +356,14 @@ def one_letter(str, num):
 def concatenate(silvester, puss_in_boots):
 	return silvester + puss_in_boots
 
+def beauty(str):
+	return str + " beauty"
 
+def slice_of_life(str):
+	return str[2:5]
+
+def slice_of_heaven(str, num):
+	return str[num:num+4]
 
 def main_strings():
 	print "testing hello(): ", hello()
@@ -364,7 +371,9 @@ def main_strings():
 	print "testing second_letter('cheese'): ", second_letter('cheese')
 	print "testing one_letter('random', 5): ", one_letter('random', 5)
 	print "testing concatenate('tweety', 'shrek'): ", concatenate('tweety',' shrek')
-	
+	print "testing beauty('sleeping'): ", beauty('sleeping')
+	print "testing slice_of_life('bread'): ", slice_of_life('bread')
+	print "testing slice_of_heaven('heavenly', 3): ", slice_of_heaven('heavenly', 3)
 
 	
 		
