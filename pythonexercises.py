@@ -305,6 +305,21 @@ def total_7s(a, b):
 			t += num
 	return t
 
+def total_non7s(a, b):
+	t = 0
+	for num in range(a, b):
+		if num % 7 != 0:
+			t += num
+	return t
+	
+def squares(n):
+	total = 0
+	for num in range(n):
+		total += num*num
+	return total
+	
+	
+
 def main_counted_loops():
 	print "testing total(3): ", total(4)
 	print "testing total(21): ", total(21)
@@ -316,6 +331,46 @@ def main_counted_loops():
 	print "testing total_evens(2, 10): ", total_evens(2, 10) # 2+4+6+8
 	print "testing total_evens(1, 6): ", total_evens(1, 6) # 2+4
 	print "testing total_7s(1, 22): ", total_7s(1, 22) # 7+14+21
+	print "testing total_non7s(1, 10): ", total_non7s(1,10) # 1+2+3+4+5+6+8+9
+	print "testing squares(5): ", squares(5) # 0+1+4+9+16 
+
+
+def hello():
+	return "hello"
+	
+def nothing():
+	return ""
+
+def second_letter(s):
+	return s[1]
+
+def one_letter(s, n):
+	return s[n]
+
+def concatenate(garfield, tom):
+	return garfield + tom
+
+def beauty(word):
+	return word + " beauty"
+	
+def slice_of_life(life):
+	return life[2:5]
+	
+def slice_of_heaven(str, num):
+	return str[num: num+4]
+
+def main_strings():
+	print "testing hello(): ", hello()
+	print "testing nothing(): ", nothing()
+	print "testing second_letter('bob'): ", second_letter('bob')  # o
+	print "testing one_letter('no games', 6): ", one_letter("no games", 6)  # e
+	print "testing concatenate('orange ', 'blue'): ", concatenate('orange', 'blue')
+	print "testing beauty('thats a'): ", beauty('thats a')
+	print "testing slice_of_life('elephant'): ", slice_of_life('elephant')
+	print "testing slice_of_heaven('abcdefgh', 2): ", slice_of_heaven('abcdefgh', 2)
+	
+	
+	
 	
 	
 def main():
@@ -325,5 +380,6 @@ def main():
 	main_boolean_numbers()
 	main_conditionals()
 	main_counted_loops()
+	main_strings()
 	
 main()
