@@ -358,6 +358,12 @@ def slice_of_life(life):
 	
 def slice_of_heaven(str, num):
 	return str[num: num+4]
+	
+def slice_of_perfection(str, n1, n2):
+	return str[n1: n1+n2]
+	
+def length(str):
+	return len(str)
 
 def main_strings():
 	print "testing hello(): ", hello()
@@ -368,8 +374,48 @@ def main_strings():
 	print "testing beauty('thats a'): ", beauty('thats a')
 	print "testing slice_of_life('elephant'): ", slice_of_life('elephant')
 	print "testing slice_of_heaven('abcdefgh', 2): ", slice_of_heaven('abcdefgh', 2)
+	print "testing slice_of_perfection('Attack of the Deranged', 3, 8): ", slice_of_perfection('Attack of the Deranged', 3, 8)
+	print "testing length('Kelton'): ", length("Kelton")
+
+def short_list():
+	return [1, 2, 3]
+	
+def hollow():
+	return []
+
+def third_value(a):
+	return a[2]
+	
+def one_value(z, n):
+	return z[n]
+	
+def add_lists(b, s):
+	return b + s
+
+def pie(z):
+	#return z + [314]
+	z.append(314)
+	return z
+
+def grow_one(r, n):
+	r.append(n)
+	return r
+
+def sub_list(k):
+	return k[2: 6]
 	
 	
+def main_lists():
+	print "testing short_list(): ", short_list()
+	print "testing hollow(): ", hollow()
+	a = [17, 38, 96, 79, 63, 74, 12, 24, 19, 6]
+	b = [5, 21, 78, 42, 63, 84]
+	print "test third_value(b): ", third_value(b)
+	print "test one_value(b, 5): ", one_value(b, 5)
+	print "test add_lists(a, b): ", add_lists(a, b)
+	print "test pie(a): ", pie(a)
+	print "test grow_one(b, 36): ", grow_one(b, 36)
+	print "test sub_list(a): ", sub_list(a)
 	
 	
 	
@@ -381,5 +427,6 @@ def main():
 	main_conditionals()
 	main_counted_loops()
 	main_strings()
+	main_lists()
 	
 main()
