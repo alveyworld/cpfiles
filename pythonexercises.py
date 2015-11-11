@@ -404,20 +404,30 @@ def grow_one(r, n):
 def sub_list(k):
 	return k[2: 6]
 	
+def sub_list2(hit, x):
+	return hit[x: x+3]
 	
+def sub_list3(hit, a, b):
+	return hit[a: a+b]
+
+def list_length(hit):
+	return len(hit)
+
 def main_lists():
 	print "testing short_list(): ", short_list()
 	print "testing hollow(): ", hollow()
 	a = [17, 38, 96, 79, 63, 74, 12, 24, 19, 6]
 	b = [5, 21, 78, 42, 63, 84]
+	c = ["Bob", "Kelton", "Bryan", "Troy", "Kaden", "Tetris" ]
 	print "test third_value(b): ", third_value(b)
 	print "test one_value(b, 5): ", one_value(b, 5)
 	print "test add_lists(a, b): ", add_lists(a, b)
 	print "test pie(a): ", pie(a)
 	print "test grow_one(b, 36): ", grow_one(b, 36)
 	print "test sub_list(a): ", sub_list(a)
-	
-	
+	print "testing sub_list2(c, 1): ", sub_list2(c, 1)
+	print "testing sub_list3(c, 3, 3): ", sub_list3(c, 3, 3)
+	print "testing list_length(c): ", list_length(c)
 	
 def main():
 	main_function()
