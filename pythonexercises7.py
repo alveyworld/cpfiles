@@ -416,6 +416,9 @@ def sub_list2(z, n):
 def sub_list3(z, n1, n2):
 	return z[n1: n1+n2]
 
+def list_length(a):
+	return len(a)
+
 def main_lists():
 	print "testing short_list(): ", short_list()
 	print "test hollow(): ", hollow()
@@ -430,8 +433,70 @@ def main_lists():
 	print 'test sub_list(a): ', sub_list(a)
 	print 'test sub_list2(hit, 1): ', sub_list2(hit, 1)
 	print 'test sub_list3(hit, 4, 3): ', sub_list3(hit, 4, 3)
+	print 'test list_length(hit): ', list_length(hit)
+
+def list_total(numbers):
+	total = 0
+	for number in numbers:
+		total += number
+	return total
+
+def list_total2(numbers):
+	total = 0
+	for number in numbers:
+		if number % 2 == 0:
+			total += number
+	return total
+
+def list_total3(numbers):
+	total = 0
+	for i in range(1, len(numbers), 2):
+		total += numbers[i]
+	return total
+
+def is_lowercase(letter):
+	alpha = "abcdefghijklmnopqrstuvwxyz"
+	return letter in alpha
+
+def string_lower_count(str):
+	count = 0
+	for c in str:
+		if is_lowercase(c):
+			count += 1
+	return count
+
+def is_digit(char):
+	digits = "0123456789"
+	return char in digits
+
+def string_digit_count(str):
+	count = 0
+	for c in str:
+		if is_digit(c):
+			count += 1
+	return count
+
+def is_letter(char):
+	alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	return char in alpha
 	
-		
+def string_word_count(sentence):
+	count = 0
+	for i in range(len(sentence)):
+		if sentence[i] == ' ' and is_letter(sentence[i+1]):	
+			count += 1
+	return count
+
+def main_sequence_loops():
+	class_iqs = [150, 100, 600, 2, 3000000, 28, 130, 98, 6]
+	lucky = [13, 7, 21, 12, 14, 32, 33, 11, 3, 777, 88, 42, 63] 
+	print "testing list_total(class_iqs): ", list_total(class_iqs)
+	print "testing list_total2(lucky): ", list_total2(lucky)
+	print "testing list_total3(lucky): ", list_total3(lucky)
+	print "testing string_lower_count('Alvey is Handsome'): ", string_lower_count('Alvey is Handsome')
+	print "test string_digit_count('R2-D2'): ", string_digit_count('R2-D2')
+	print "Testing string_word_count('I am a doctor of modern medicine'): ", string_word_count('I am a doctor of modern medicine')
+	
 def main():
 	main_function()
 	main_arithmetic()
@@ -441,5 +506,6 @@ def main():
 	main_counted_loops()
 	main_strings()
 	main_lists()
+	main_sequence_loops()
 	
 main()
