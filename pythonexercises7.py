@@ -409,18 +409,27 @@ def grow_one(listy, item):
 	
 def sub_list(z):
 	return z[1: 5]
+	
+def sub_list2(z, n):
+	return z[n: n+3]
+
+def sub_list3(z, n1, n2):
+	return z[n1: n1+n2]
 
 def main_lists():
 	print "testing short_list(): ", short_list()
 	print "test hollow(): ", hollow()
 	a = ['Alvey', 'Kanye', 'Trump', 'Swift', 'North', 'Ellen']
 	b = ['Obama', 'Will-i-am', 'Seinfield', 'Fergie', 'Elmo', 'Wierd-Al']
+	hit = ['Brett', 'Connor', 'Dakota', 'Jeff', 'Jacob', 'Jarod', 'Kincade', 'Chandler']
 	print "test third_value(a): ", third_value(a)
 	print "test one_value(a, 5): ", one_value(a, 5)
 	print "test add_lists(a, b): ", add_lists(a, b)
 	print "test pie(a): ", pie(a)
 	print "test grow_one(b): ", grow_one(b, "Kermit")
 	print 'test sub_list(a): ', sub_list(a)
+	print 'test sub_list2(hit, 1): ', sub_list2(hit, 1)
+	print 'test sub_list3(hit, 4, 3): ', sub_list3(hit, 4, 3)
 	
 		
 def main():
