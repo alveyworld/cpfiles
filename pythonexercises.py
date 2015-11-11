@@ -442,11 +442,53 @@ def list_total2(n):
 			total += number
 	return total
 
+def list_total3(nums):
+	total = 0
+	for num in range(1, len(nums), 2):
+		total += nums[num]
+	return total
+	
+def is_lowercase(letter):
+	alpha = "abcdefghijklmnopqrstuvwxyz"
+	return letter in alpha
+
+def string_lower_count(str):
+	count = 0
+	for c in str:
+		if is_lowercase(c):
+			count += 1
+	return count
+
+def is_digit(char):
+	digits = "0123456789"
+	return char in digits
+
+def string_digit_count(str):
+	count = 0 
+	for c in str:
+		if is_digit(c):
+			count += 1
+	return count
+	
+def is_letter(char):
+	alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	return char in alpha
+
+def string_word_count(str):
+	count = 0
+	for num in range(len(str)):
+		if str[num] == ' ' and is_letter(str[num+1]):
+			count += 1
+	return count
 
 def main_sequence_loops():
 	lucky = [3, 7, 9, 13, 12, 14, 44, 17, 21, 33, 32, 39, 42]
 	print "testing list_total(lucky): ", list_total(lucky)
 	print "testing list_total2(lucky): ", list_total2(lucky)
+	print "testing list_total3(lucky): ", list_total3(lucky)
+	print "testing string_lower_count('Bugs Bunny'): ", string_lower_count('Bugs Bunny')
+	print "testing string_digit_count('R2-D2 BB-8'): ", string_digit_count('R2-D2 BB-8')
+	print "testing string_word_count('hi i am a teacher'): ", string_word_count('hi i am a teacher')
 	
 def main():
 	main_function()
