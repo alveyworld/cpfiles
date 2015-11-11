@@ -364,6 +364,12 @@ def slice_of_life(str):
 
 def slice_of_heaven(str, num):
 	return str[num:num+4]
+	
+def slice_of_perfection(str, n1, n2):
+	return str[n1:n1+n2]
+
+def length(str):
+	return len(str)
 
 def main_strings():
 	print "testing hello(): ", hello()
@@ -374,7 +380,47 @@ def main_strings():
 	print "testing beauty('sleeping'): ", beauty('sleeping')
 	print "testing slice_of_life('bread'): ", slice_of_life('bread')
 	print "testing slice_of_heaven('heavenly', 3): ", slice_of_heaven('heavenly', 3)
+	print "test slice_of_perfection('trees tacobell moosetracks', 7, 6): ", slice_of_perfection('trees tacobell moosetracks', 7, 6)
+	print "test length('the nile'): ", length('the nile')
 
+def short_list():
+	return [1, 2, 3]
+
+def hollow():
+	return []
+
+def third_value(list):
+	return list[2]
+
+def one_value(list, pos):
+	return list[pos]
+
+def add_lists(a, b):
+	return a + b
+
+def pie(somelist):
+	#return somelist + [314]
+	somelist.append(314)
+	return somelist
+
+def grow_one(listy, item):
+	listy.append(item)
+	return listy
+	
+def sub_list(z):
+	return z[1: 5]
+
+def main_lists():
+	print "testing short_list(): ", short_list()
+	print "test hollow(): ", hollow()
+	a = ['Alvey', 'Kanye', 'Trump', 'Swift', 'North', 'Ellen']
+	b = ['Obama', 'Will-i-am', 'Seinfield', 'Fergie', 'Elmo', 'Wierd-Al']
+	print "test third_value(a): ", third_value(a)
+	print "test one_value(a, 5): ", one_value(a, 5)
+	print "test add_lists(a, b): ", add_lists(a, b)
+	print "test pie(a): ", pie(a)
+	print "test grow_one(b): ", grow_one(b, "Kermit")
+	print 'test sub_list(a): ', sub_list(a)
 	
 		
 def main():
@@ -385,5 +431,6 @@ def main():
 	main_conditionals()
 	main_counted_loops()
 	main_strings()
+	main_lists()
 	
 main()
