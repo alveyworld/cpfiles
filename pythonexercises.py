@@ -428,6 +428,25 @@ def main_lists():
 	print "testing sub_list2(c, 1): ", sub_list2(c, 1)
 	print "testing sub_list3(c, 3, 3): ", sub_list3(c, 3, 3)
 	print "testing list_length(c): ", list_length(c)
+
+def list_total(g):
+	total = 0
+	for number in g:
+		total += number
+	return total
+
+def list_total2(n):
+	total = 0
+	for number in n:
+		if number % 2 == 0:
+			total += number
+	return total
+
+
+def main_sequence_loops():
+	lucky = [3, 7, 9, 13, 12, 14, 44, 17, 21, 33, 32, 39, 42]
+	print "testing list_total(lucky): ", list_total(lucky)
+	print "testing list_total2(lucky): ", list_total2(lucky)
 	
 def main():
 	main_function()
@@ -438,5 +457,6 @@ def main():
 	main_counted_loops()
 	main_strings()
 	main_lists()
+	main_sequence_loops()
 	
 main()
